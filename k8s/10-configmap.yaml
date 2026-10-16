@@ -1,0 +1,8 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: practica-app-config
+  namespace: practica
+data:
+  GREETING: "Hola desde Kubernetes"
+  APP_VERSION: "v1"

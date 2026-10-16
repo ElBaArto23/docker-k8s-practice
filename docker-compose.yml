@@ -1,0 +1,10 @@
+services:
+  web:
+    build: .
+    image: practica-app:local
+    ports:
+      - "8000:8000"
+    environment:
+      GREETING: "Hola desde Docker Compose"
+      APP_VERSION: "v1"
+    restart: unless-stopped
